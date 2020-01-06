@@ -1,12 +1,16 @@
 
 package fr.gtm.GestionnaireContacts;
 
-public class Entreprise {
+public class Entreprise extends Contact{
 
-	private String nomEntreprise;
 	
-	public Entreprise() {
-		// TODO Auto-generated constructor stub
+	@Override
+	public String getNom() {
+		return "Entreprise "+super.getNom();
 	}
+	
+	
+	public Entreprise(String nom) {
+		super(nom);	}
 
 }
